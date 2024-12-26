@@ -50,6 +50,5 @@ function gotowhatsapp() {
     + "Email: " + email + "%0a"
     + "Subject: " + sub + "%0a"
     + "Message: " + msg;
-
     window.open(url).focus();
 }
