@@ -45,7 +45,7 @@ function gotowhatsapp() {
     var sub = document.getElementById("sub").value;
     var msg = document.getElementById("msg").value;
 
-    var url = "https://wa.me/"+ +919426671316 +"?text=" 
+    var url = "https://wa.me/+919426671316?text=" 
     + "Name: " + name + "%0a"
     + "Email: " + email + "%0a"
     + "Subject: " + sub + "%0a"
