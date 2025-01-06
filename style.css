@@ -553,6 +553,17 @@ header .follow a:hover{
     margin-bottom: 1.5rem;
 }
 
+.arrow{
+    background-color: var(--main-color);
+    height: 40px;
+    width: 40px;
+    float: right;
+}
+
+.arrow .footericon-top i{
+      text-align: center;
+}
+
 
 
 
