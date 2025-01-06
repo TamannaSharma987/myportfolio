@@ -39,11 +39,12 @@ window.onmousemove = (e) =>{
 
 
 function gotowhatsapp() {
-
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var sub = document.getElementById("sub").value;
     var msg = document.getElementById("msg").value;
+
+    alert(name);
 
     var url = "https://wa.me/+919426671316?text=" 
     + "Name: " + name + "%0a"

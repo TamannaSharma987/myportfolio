@@ -171,7 +171,8 @@ header .follow a:hover{
 }
 
 .home .image img{
-    width: 100%;
+    width: 80%;
+    border: 10px solid #444;
 }
 
 .home .content{
@@ -184,7 +185,7 @@ header .follow a:hover{
 }
 
 .home .content h3{
-    font-size: 4.5rem;
+    font-size: 3.7rem;
     color: #111;
     text-transform: uppercase;
 }
@@ -209,8 +210,8 @@ header .follow a:hover{
 .about .row-1{
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
-    padding: 2rem;
+    gap: 2rem;
+    padding: 0rem;
 }
 
 .about .row-1 .image{
@@ -227,7 +228,7 @@ header .follow a:hover{
 }
 
 .about .row-1 .content{
-    flex: 1 1 50rem;
+    flex: 1 1 45rem;
 }
 
 .about .row-1 .content h3{
@@ -249,38 +250,68 @@ header .follow a:hover{
 }
 
 .about .row-1 .content .box-container .box{
-    flex: 1 1 20rem;
+    flex: 1 1 25rem;
 }
 
 .about .row-1 .content .box-container .box span{
     color: var(--main-color);
 }
 
-.about .row-2{
+.skill .row-2{
     flex-wrap: wrap;
     display: flex;
     gap: 1.5rem;
     align-items: center;
 }
 
-.about .row-2 .skills{
+.skill .row-2 .skills{
     flex: 1 1 40rem;
 }
 
-.about .row-2 .skills .progress{
+.skill .row-2 .skills .progress{
     padding: 1rem 0;
 }
 
-.about .row-2 .skills .progress h3{
+.skill .row-2 .skills .progress h3{
     display: flex;
     justify-content: space-between;
     padding: .7rem 0;
     font-size: 1.7rem;
     color: #111;
     font-weight: 400;
+
 }
 
-.about .row-2 .skills .progress .bar{
+.skill .row-2 .skills .progress .bar span .html{
+    animation: html 2s;
+    width: 100%;
+}
+
+.skill .row-2 .skills .progress .bar span .css{
+    animation: css 2s;
+    width: 87%;
+}
+@keyframes html{
+    form{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+
+}
+
+@keyframes css{
+    form{
+        width: 0;
+    }
+    to{
+        width: 87%;
+    }
+
+}
+
+.skill .row-2 .skills .progress .bar{
     width: 100%;
     background: #ccc;
     overflow: hidden;
@@ -288,34 +319,36 @@ header .follow a:hover{
     border-radius: 50rem;
 }
 
-.about .row-2 .skills .progress .bar span{
+.skill .row-2 .skills .progress .bar span{
     display: block;
     height: 100%;
     background: var(--main-color);
     border-radius: 50rem;
+    animation: HTML 2s;
 }
 
-.about .row-2 .skills .progress:nth-child(1) .bar span{
+.skill .row-2 .skills .progress:nth-child(1) .bar span{
     width: 100%;
 }
 
-.about .row-2 .skills .progress:nth-child(2) .bar span{
+
+.skill .row-2 .skills .progress:nth-child(2) .bar span{
     width: 87%;
 }
 
-.about .row-2 .skills .progress:nth-child(3) .bar span{
+.skill .row-2 .skills .progress:nth-child(3) .bar span{
     width: 75%;
 }
 
-.about .row-2 .skills .progress:nth-child(4) .bar span{
+.skill .row-2 .skills .progress:nth-child(4) .bar span{
     width: 85%;
 }
 
-.about .row-2 .skills .progress:nth-child(5) .bar span{
+.skill .row-2 .skills .progress:nth-child(5) .bar span{
     width: 70%;
 }
 
-.about .row-2 .box-container{
+.skill .row-2 .box-container{
     flex: 1 1 40rem;
 }
 
@@ -333,6 +366,10 @@ header .follow a:hover{
   background: #fff;
   border-radius: .5rem;
   box-shadow: .5rem 1rem rgba(0,0,0,.1);
+}
+
+.education .box-container .box:hover{
+    background-color: var(--main-color);
 }
 
 .education .box-container .box i{
@@ -429,6 +466,10 @@ header .follow a:hover{
     border-radius: .5rem;
 }
 
+.contact .icons-container .icons:hover{
+    background-color: var(--main-color);
+}
+
 .contact .icons-container .icons i{
     height: 5rem;
     width: 5rem;
@@ -437,6 +478,10 @@ header .follow a:hover{
     background: var(--main-color);
     color: #fff;
     border-radius: 50%;
+}
+
+.contact .icons-container .icons i:hover{
+    background-color: #fff;
 }
 
 .contact .icons-container .icons h3{
@@ -459,11 +504,15 @@ header .follow a:hover{
 
 .contact .row form{
     flex: 1 1 55rem;
-    background: #fff;
+    background:#fff;
     padding: 0 2rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     border-radius: .5rem;
-    width: 70%;
+    width: 100%;
+}
+
+.contact .row form:hover{
+    background-color: rgb(255, 194, 113);
 }
 
 .contact .row form .box,
@@ -477,9 +526,16 @@ header .follow a:hover{
     margin: 1rem 0;
 }
 
+.contact .row form .box:hover,
+.contact .row form textarea:hover{
+    background-color: #fdffda;
+}
+
+
+
 .contact .row form .box:focus,
 .contact .row form textarea:focus{
-    border-color: var(--main-color);
+    border-color:#ccc;
 }
 
 .contact .row form .box::placeholder,
@@ -496,6 +552,7 @@ header .follow a:hover{
     margin-top: 0;
     margin-bottom: 1.5rem;
 }
+
 
 
 
