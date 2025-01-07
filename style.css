@@ -501,6 +501,10 @@ header .follow a:hover{
     gap: 1.5rem;
 }
 
+.contact.row.arrow{
+    flex: 1 1 20rem;
+}
+
 
 .contact .row form{
     flex: 1 1 55rem;
@@ -553,15 +557,11 @@ header .follow a:hover{
     margin-bottom: 1.5rem;
 }
 
-.arrow{
-    background-color: var(--main-color);
-    height: 40px;
-    width: 40px;
+.arrow a img{
+    height: 50px;
+    width: 50px;
     float: right;
-}
-
-.arrow .footericon-top i{
-      text-align: center;
+    background-color: var(--main-color);
 }
 
 
