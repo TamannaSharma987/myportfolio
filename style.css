@@ -561,7 +561,10 @@ header .follow a:hover{
     height: 50px;
     width: 50px;
     float: right;
-    background-color: var(--main-color);
+    background:transparent;
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
 }
 
 
